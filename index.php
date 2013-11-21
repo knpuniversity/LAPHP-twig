@@ -32,8 +32,8 @@ switch ($uri) {
     // The Homepage! (/)
     case '/':
         echo $twig->render('homepage.twig', array(
+            'title'    => 'Suit Up!',
             'pageData' => array(
-                'title'    => 'Suit Up!',
                 'summary'  => 'You\'re <strong>hip</strong>, you\'re cool, you\'re a penguin! Now, start dressing like one! Find the latest suits, bow-ties, swim shorts and other outfits here!',
                 'hasSale'  => 1,
             ),

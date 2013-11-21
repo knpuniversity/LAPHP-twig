@@ -2,7 +2,7 @@
 
 {% import 'macros.twig' as myMacros %}
 
-{% block title 'Start looking fly! '~pageData.title %}
+{% block title 'Start looking fly! '~title %}
 
 {% block body %}
 {#
@@ -10,7 +10,7 @@
 #}
 
 <div class="hero-unit">
-    <h1>{{ pageData.title }}</h1>
+    <h1>{{ title }}</h1>
     <p>
         {{ pageData.summary|raw }}
     </p>
