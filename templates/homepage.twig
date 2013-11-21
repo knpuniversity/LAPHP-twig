@@ -1,46 +1,22 @@
-{% extends 'layout.twig' %}
-
-{% import 'macros.twig' as myMacros %}
-
-{% block title 'Start looking fly! '~title %}
-
-{% block body %}
-{#
-    This is the best template evaaaaaaar!!!!!!
-#}
-
 <div class="hero-unit">
-    <h1>{{ title }}</h1>
+    <h1>Sad Page :/</h1>
     <p>
-        {{ pageData.summary|raw }}
+        We should put some Twig in here :/ :/
     </p>
 
-    {% if pageData.hasSale %}
     <div class="sale-ends-at">
-        Sale Ends: {{ saleEndsAt|date('D M jS ga') }}
+        Sale Ends: **someday**
     </div>
-    {% endif %}
-</div>
-
-{{ include('_banner.twig', { 'backgroundColor': 'violet' }) }}
-
-<div class="row">
-    {{ myMacros.printProducts(featuredProducts, "Storm at the south pole - nothing on sale now!") }}
 </div>
 
 <div class="row">
-    {{ myMacros.printProducts(products, "Oh now! We're all out of super-awesome penguin clothes!") }}
-</div>
+    <div class="span4">
+        <h2>Some product!</h2>
+    
+        <p class="price">100</p>
 
-{% if products|length is even %}
-    <div class="row">
-        <div class="span12">
-            There is an even number of products! OMG!
+        <div class="product-img">
+            <img src="../assets/images/formal.png" alt="Some product!"/>
         </div>
     </div>
-{% endif %}
-
-{#<div>#}
-    {#&copy; {{ 'now'|date('Y') }}#}
-{#</div>#}
-{% endblock %}
+</div>
