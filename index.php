@@ -38,12 +38,6 @@ switch ($uri) {
                 'hasSale'  => 1,
             ),
             'products' => array(
-                'Tuxedo',
-                'Bow tie',
-                'Black Boxers',
-            ),
-            /*
-            'products' => array(
                 new Product('Serious Businessman', 'formal.png'),
                 new Product('Penguin Dress', 'dress.png'),
                 new Product('Sportstar Penguin', 'sports.png'),
@@ -53,7 +47,6 @@ switch ($uri) {
                 new Product('Penguin Accessories', 'swatter.png'),
                 new Product('Super Cool Penguin', 'super-cool.png'),
             ),
-            */
             'saleEndsAt' => new \DateTime('+1 month'),
         ));
 
