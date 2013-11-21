@@ -2,6 +2,7 @@
 
 require __DIR__.'/vendor/autoload.php';
 require __DIR__.'/src/Product.php';
+require __DIR__.'/src/LAPHPExtension.php';
 
 /*
  * Go to this file in your web-browser to render Twig templates:
@@ -26,6 +27,7 @@ $twig = new Twig_Environment($loader, array(
     'strict_variables' => true
 ));
 $twig->addExtension(new Twig_Extension_Debug());
+//$twig->addExtension(new \LAPHPExtension());
 
 // 3) create a few different "pages"
 switch ($uri) {

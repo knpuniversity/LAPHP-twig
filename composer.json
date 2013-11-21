@@ -1,6 +1,9 @@
 {
     "require": {
         "twig/twig": "~1.12",
-        "symfony/http-foundation": "~2.2.1"
+        "symfony/http-foundation": "~2.2.1",
+
+        "behat/mink": "~1.5",
+        "behat/mink-goutte-driver": "~1.0.9"
     }
 }
