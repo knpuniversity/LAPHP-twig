@@ -51,11 +51,6 @@ switch ($uri) {
                 new Product('Penguin Dress', 'dress.png'),
                 new Product('Sportstar Penguin', 'sports.png'),
             ),
-            'featuredProducts' => array(
-                new Product('Angel Costume', 'angel-costume.png'),
-                new Product('Penguin Accessories', 'swatter.png'),
-                new Product('Super Cool Penguin', 'super-cool.png'),
-            ),
             */
         ));
 
